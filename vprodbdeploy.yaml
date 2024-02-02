@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: VProfile-db
+  name: vprofile-deployment
   labels:
     app: vprofile-db
 spec:
