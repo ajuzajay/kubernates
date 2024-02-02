@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: VProfile-db
   labels:
-    app: VProfile-db
+    app: vprofile-db
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: VProfile-db
+      app: vprofile-db
   template:
     metadata:
-      name: VProfile-db
+      name: vprofile-db
       labels:
-        app: VProfile-db
+        app: vprofile-db
     spec:
       containers:
-        - name: VProfiledb
+        - name: vprofiledbimage
           image: vprofile/vprofiledb
           volumeMounts:
             - mountPath: /var/lib/mysql
