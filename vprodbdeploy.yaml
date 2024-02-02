@@ -16,7 +16,7 @@ spec:
         app: vprofile-db
     spec:
       containers:
-        - name: vprofiledbimage
+        - name: vprodb
           image: vprofile/vprofiledb
           volumeMounts:
             - mountPath: /var/lib/mysql
